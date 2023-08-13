@@ -9,7 +9,7 @@
       window.GLOBAL_CONFIG = {
         SCF_GATEWAY: "https://hello-world-curly-flower-c8c2.sayemraj7943.workers.dev/",
         SITE_NAME: "sayem king",
-        IS_CF: true,
+           IS_CF: true,
       };
       if (window.GLOBAL_CONFIG.SCF_GATEWAY.indexOf("workers") === -1) {
         window.GLOBAL_CONFIG.SCF_GATEWAY += "/fodi/";
@@ -1186,7 +1186,7 @@
               default:
                 let textWrapper = document.createElement("div");
                 textWrapper.style.textAlign = "center";
-                textWrapper.innerHTML = "该文件不支持预览";
+                textWrapper.innerHTML = "The file does not support preview";
                 content.innerHTML = "";
                 content.appendChild(textWrapper);
                 break;
@@ -1203,8 +1203,8 @@
                   window.api.url + "?file=" + encodeURI(path)
                 );
                 const btn = document.querySelector(".btn.quote");
-                btn.innerHTML = "已复制";
-                setTimeout(() => (btn.innerHTML = "引用"), 250);
+                btn.innerHTML = "copied";
+                setTimeout(() => (btn.innerHTML = "quote"), 250);
               });
             document
               .querySelector(".btn.share")
@@ -1225,8 +1225,8 @@
                     encodeURI(sharePath())
                 );
                 const btn = document.querySelector(".btn.share");
-                btn.innerHTML = "已复制";
-                setTimeout(() => (btn.innerHTML = "分享"), 250);
+                btn.innerHTML = "copied";
+                setTimeout(() => (btn.innerHTML = "share"), 250);
               });
             switchRightDisplay("preview");
 
@@ -1603,9 +1603,9 @@
           <div class="preview">
             <div class="info">
               <div class="file-name"></div>
-              <div class="btn download">下载</div>
-              <div class="btn quote">引用</div>
-              <div class="btn share">分享</div>
+              <div class="btn download">download</div>
+              <div class="btn quote">quote</div>
+              <div class="btn share">share</div>
             </div>
             <div class="content"></div>
           </div>
